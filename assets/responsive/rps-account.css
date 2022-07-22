@@ -1,0 +1,48 @@
+/* ipad pro : > tablet < PC */
+@media (min-width: 1024px) and (max-width: 1365px) {
+
+}
+
+
+/* mobile & tablet */
+@media (max-width: 1023px) {
+
+    
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .container__my-account-page {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .container__account-page-my-info, 
+    .container__account-page-order-history {
+        overflow-x: scroll;
+    }
+
+    .container__checkout-info-drop-down-wrap,
+    .container__checkout-btn-wrap.container__account-page-btn-wrap {
+        flex-direction: column;
+    }
+
+    .container__checkout-success-btn,
+    .container__checkout-return-cart-btn {
+        width: 100%;
+    }
+
+    .container__account-page-edit-info,
+    .container__account-page-log-out-link {
+        text-decoration: none;
+        cursor: pointer;
+    } 
+
+    
+}

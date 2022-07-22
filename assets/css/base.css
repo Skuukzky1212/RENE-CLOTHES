@@ -1,0 +1,232 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #e4e4e4;
+    --text-hover-color: #655;
+    --header-height: calc(var(--lead-nav-height) + var(--nav-bar-height) + var(--header-categary));
+    --lead-nav-height: 34px;
+    --nav-bar-height: 80px;
+    --header-categary: 55px;
+    --backround-color-modal: #f6f6f6;
+    --disable-color: #c7c3c3;
+    --text-light-color: #555;
+    --total-price-color: #4b4b4b;
+    --success-color: #2A9DCC;
+    /* --header__category-list-modal-height: 80vh; */
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* 1 rem = 10px */
+    /* called 'hack' */
+    font-size: 62.5%;
+    font-family: Century Gothic,Arial,sans-serif;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+    width: 12px;
+    background-color: var(--border-color);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--disable-color);
+}
+
+
+table, th, td {
+    border-collapse: collapse;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+
+input {
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+/* animation for category */
+@keyframes slidetoptodown {
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+}
+
+@keyframes modal-fade-in {
+    from{
+        transform: translateY(-110px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes modal-fade-in2 {
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* @keyframes autoSlide {
+    0%, 22.5% {
+        transform: translateX(0%);
+    }
+
+    25%, 47.5% {
+        transform: translateX(-100%);
+    }
+    
+    50%, 72.5% {
+        transform: translateX(-200%);
+    }
+
+    75%, 97.5% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+} */
+
+/* hide/ show navbar header when scroll */
+.scrolled-down {
+    display: none;
+}
+
+.scrolled-up {
+    display: block;
+}
+/* Pagination */
+
+.container__product-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.container__product-pagination-item, 
+.container__product-pagination-dots {
+    list-style: none;
+    font-size: 1.7rem;
+    margin: 0 20px;
+}
+.container__product-pagination-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    background-color: var(--black-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container__product-pagination-item--disable {
+    background-color: #c7c3c3;
+    cursor: default;
+    opacity: unset;
+}
+
+.container__product-pagination-item--disable.container__product-pagination-item:hover {
+    opacity: unset;
+}
+
+.container__product-pagination-item:hover {
+    opacity: 0.8;
+}
+
+.container__product-pagination-item__link {
+    text-decoration: none;
+}
+
+.container__product-pagination-item__icon {
+    color: #fff;
+}
+
+/* increase / decrease input */
+
+.quantity-input-form {
+    display: inline-flex;
+}
+
+.quantity-input-button {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.4rem;
+    justify-content: center;
+    border: 1px solid #ddd;
+    margin: 0;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.quantity-input-button:hover {
+    cursor: pointer;
+}
+.quantity-input-button.quantity-input-button-decrease {
+  
+    border-radius: 8px 0 0 8px;
+}
+
+.quantity-input-button.quantity-input-button-increase {
+   
+    border-radius: 0 8px 8px 0;
+}
+
+.quantity-input-value {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    width: 30px;
+    height: 35px;
+    padding-bottom: 3px;
+    outline: none;
+    flex: 1;
+}
+
+.quantity-input-value[type=number]::-webkit-inner-spin-button,
+.quantity-input-value[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

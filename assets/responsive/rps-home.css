@@ -1,0 +1,77 @@
+/* ipad pro : > tablet < PC */
+@media (min-width: 1024px) and (max-width: 1365px) {
+    /* header slider */
+    .slider__container-img-item img {
+        height: 34vh;
+    }
+
+    /* banner-body */
+    .container__product-banner-img {
+        height: 45vh;
+    }
+
+}
+
+
+/* mobile & tablet */
+@media (max-width: 1023px) {
+    .slick-dots button {
+        width: 14px;
+        height: 14px;
+    }
+
+    .slick-dots {
+        gap: 0 30px;
+    }    
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .slider__container-img-item img {
+        height: 29vh;
+    }
+
+    .slider__container-img {
+        padding-top: calc(var(--header-height) / 2 + 30px);
+    }
+
+    /* banner */
+    .container__product-banner-img {
+        height: unset;
+    }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .slider__container-img {
+        padding-top: unset;
+    }
+
+    .slider__container-img-item img {
+        height: 34vh;
+        padding-top: 20px;
+        object-fit: cover;
+    }
+
+    .slick-dots {
+        gap: 0 18px;
+        bottom: -16px;
+    }
+
+    .container__title {
+        font-size: 2.9rem;
+    }
+
+    .container__title {
+        display: block;
+        font-size: 2.9rem;
+        text-align: center;
+        margin: 0px 0 40px 0;
+    }
+
+    .container__product-banner-img {
+        height: unset;
+        margin: 7.5px 0px;
+    }
+
+}

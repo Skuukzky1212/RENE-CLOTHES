@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rene Website - Check Out</title>
+    <link rel="shortcut icon" type="image/png" href="../assets/img/mini-logo.png">
+    <link rel="stylesheet" href="../assets/fonts/Century Gothic Std Regular.otf">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/responsive/rps-base.css">
+    <link rel="stylesheet" href="../assets/responsive/rps-checkout.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- start container -->
+        <div class="container__cart-page container__check-out-page">
+            <div class="grid wide">
+                <a href="#" class="container__cart-page-logo">
+                    <span class="container__cart-page-logo-text">RENÉ</span>
+                </a>
+                <div class="container__breadcrumb">
+                    <div class="container__breadcrumb-wrap">
+                        <a href="#" class="container__breadcrumb-homepage-link" title="Back to the home page">Home</a>
+                        <i class="container__breadcrumb-icon ti-angle-right"></i>
+                        <a href="#" class="container__breadcrumb-page-title">Shopping Cart </a>
+                        <i class="container__breadcrumb-icon ti-angle-right"></i>
+                        <span style="cursor: default;" class="container__breadcrumb-page-title">Check Out</span>
+                    </div>
+                </div>
+
+                <div class="container__checkout-header">
+                    <i class="container__checkout-header-icon ti-check-box"></i>
+                    <!-- not logged in -->
+                    <span style="display:none;" class="container__checkout-header-text">
+                        Do you already have an account?
+                        <a href="../html/login.html" class="container__checkout-header-login-link">Log in</a>
+                    </span>
+
+                    <!-- logged in -->
+                    <div class="container__checkout-header--logged-in">
+                        <span class="container__checkout-header--logged-in-text">
+                            Hello,
+                            <a href="../html/account.html" class="container__checkout-header--logged-in-link">Pham Quoc Vuong !</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="container__checkout-body">
+                    <div class="row sm-gutter container__checkout-body-mobile">
+                        <div class="col l-6 m-12 c-12">
+                            <form class="container__checkout-info-form">
+                                <span class="container__checkout-info-form-title">Shipping address</span>
+
+                                <div class="container__checkout-info-wrap">
+                                    <label class="container__checkout-info-label">Name</label>
+                                    <input required type="text" class="container__checkout-info-input"
+                                        placeholder="*Enter your full name">
+                                </div>
+
+                                <div class="container__checkout-info-wrap">
+                                    <label class="container__checkout-info-label">Phone Number</label>
+                                    <input required type="tel" pattern="(\+84|0)\d{9,10}"
+                                        class="container__checkout-info-input" placeholder="*Enter your phone number">
+                                </div>
+
+                                <div class="container__checkout-info-wrap">
+                                    <label class="container__checkout-info-label">Email</label>
+                                    <input required type="email" class="container__checkout-info-input"
+                                        placeholder="*Enter your email address">
+                                </div>
+
+                                <div class="container__checkout-info-wrap container__checkout-info-drop-down-wrap">
+                                    <div class="container__checkout-info-drop-down">
+                                        <label class="container__checkout-info-label">City/Province</label>
+                                        <div class="container__checkout-info-select-box">
+                                            <div id="city" class="container__checkout-info-options-container">
+                                                <!-- <div class="container__checkout-info-option" style="display: block;">
+                                                    <input type="radio" class="radio" id="city1" name="category-info">
+                                                    <label for="city1">Thành phố Hà Nội</label>
+                                                </div> -->
+                                            </div>
+
+                                            <div class="container__checkout-info-selected">
+                                                Select your city
+                                            </div>
+
+                                            <div class="container__checkout-info-search-box">
+                                                <input type="text" placeholder="Typing to find.." class="input_search">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="container__checkout-info-drop-down">
+                                        <label class="container__checkout-info-label">District</label>
+                                        <div class="container__checkout-info-select-box">
+                                            <div id="district" class="container__checkout-info-options-container">
+                                                <div style="cursor: default;" class="container__checkout-info-option">
+                                                    <label style="cursor: default;">Select your district</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="container__checkout-info-selected">
+                                                Select your district
+                                            </div>
+
+                                            <div class="container__checkout-info-search-box">
+                                                <input type="text" placeholder="Typing to find.." class="input_search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container__checkout-info-wrap">
+                                    <label class="container__checkout-info-label">Address</label>
+                                    <input required type="email" class="container__checkout-info-input"
+                                        placeholder="*Address">
+                                </div>
+
+                                <span class="checkout__note-text">(*) Do not skip this information</span>
+
+                                <!-- Payment option -->
+                                <span class="container__checkout-info-form-title">PAYMENT</span>
+                                <div class="container__checkout-info-wrap container__checkout-payment-drop-down-wrap">
+                                    <div class="container__checkout-payment-drop-down">
+                                        <div class="container__checkout-payment-select-box">
+                                            <div class="container__checkout-payment-options-container">
+                                                <div class="container__checkout-payment-option">
+                                                    <input 
+                                                        id="banking1"
+                                                        type="radio" 
+                                                        class="container__checkout-payment-option-input"
+                                                        name="container__checkout-payment-option-name">
+                                                    <label for="banking1">
+                                                        Payment by card (ATM, Visa, MasterCard)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="container__checkout-payment-selected">
+                                                Banking Information: 0291002370440 - Pham Quoc Vuong - Vietcombank.<br><br>
+                                                Transfer Contents: "Your name + Phone number".
+                                            </div>
+
+                                            <div class="container__checkout-payment-options-container">
+                                                <div class="container__checkout-payment-option">
+                                                    <input 
+                                                        id="banking2"
+                                                        type="radio" 
+                                                        class="container__checkout-payment-option-input"
+                                                        name="container__checkout-payment-option-name">
+                                                    <label for="banking2" >
+                                                        Payment by MOMO
+                                                    </label> 
+                                                </div>
+                                            </div>
+                                            <div class="container__checkout-payment-selected">
+                                                MOMO number: 0369830702.<br> <br>
+                                                Transfer Contents: "Your name + Phone number"
+                                            </div>
+
+                                            <div class="container__checkout-payment-options-container">
+                                                <div class="container__checkout-payment-option">
+                                                    <input 
+                                                        id="banking3" 
+                                                        type="radio" 
+                                                        class="container__checkout-payment-option-input"
+                                                        name="container__checkout-payment-option-name">
+                                                    <label for="banking3">
+                                                        Payment by COD
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="container__checkout-payment-selected border-radius">
+                                                Pay after receive 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End payment option -->
+
+                                <div class="container__checkout-btn-wrap">
+                                    <button class="container__checkout-success-btn">
+                                        <a href="../html/checkout-thank-you.html" class="container__checkout-success-btn-link">
+                                            Complete order
+                                        </a>
+                                    </button>
+
+                                    <div class="container__checkout-return-cart-btn">
+                                        <a href="../html/cart.html" class="container__checkout-return-cart-btn-link">
+                                            Return to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col l-6 m-12 c-12">
+                            <div class="container__checkout-order-review">
+                                <div
+                                    class="container__checkout-order-review-summary-section container__checkout-order-review-product-list">
+                                    <table>
+                                        <tbody>
+                                            <tr class="container__checkout-order-review-product">
+                                                <td class="container__checkout-order-review-product-img">
+                                                    <div class="container__checkout-order-review-product-thumbnail">
+                                                        <div
+                                                            class="container__checkout-order-review-product-thumbnail-wrap">
+                                                            <img src="https://cdn.shopify.com/s/files/1/0627/8957/products/FW3840LB_Bellissa_1_1024x1024.jpg?v=1631662296)"
+                                                                alt="" class="container__checkout-order-review-img">
+                                                        </div>
+                                                        <span
+                                                            class="container__checkout-order-review-product-thumbnail-quantity"
+                                                            aria-hidden="true">2</span>
+                                                    </div>
+                                                </td>
+
+                                                <td class="container__checkout-order-review-product-description">
+                                                    <div class="container__checkout-order-review-items-info">
+                                                        <span class="container__checkout-order-review-item-name">
+                                                            BELLISSA (Light Blue)
+                                                        </span>
+                                                        <span class="container__checkout-order-review-item-size">
+                                                            L
+                                                        </span>
+                                                    </div>
+                                                </td>
+
+                                                <td class="container__checkout-order-review-product-price">
+                                                    <span class="container__checkout-order-review-item-price">
+                                                        720.000<span>&#8363;</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div
+                                    class="container__checkout-order-review-summary-section container__checkout-order-review-discount">
+                                    <form
+                                        class="container__cart-page-discount-code-wrap container__checkout-order-review-discount-code-wrap">
+                                        <input type="text" class="container__cart-page-discount-code"
+                                            placeholder="Discount code or gift card">
+                                        <button class="container__cart-page-discount-code-btn">Apply</button>
+                                    </form>
+                                </div>
+
+                                <div
+                                    class="container__checkout-order-review-summary-section container__checkout-order-review-total-lines">
+                                    <table class="container__checkout-order-review-total-line-table">
+                                        <tbody class="container__checkout-order-review-total-line-table-body">
+                                            <tr class="container__checkout-order-review-subtotal">
+                                                <td class="container__checkout-order-review-subtotal-text">
+                                                    Subtotal
+                                                </td>
+                                                <td class="container__checkout-order-review-item-price">
+                                                    720.000<span>&#8363;</span>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="container__checkout-order-review-shipping-fee">
+                                                <td class="container__checkout-order-review-shipping-text">
+                                                    Shipping
+                                                </td>
+                                                <td class="container__checkout-order-review-item-price">
+                                                    Free
+                                                </td>
+                                            </tr>
+
+                                            <tr class="container__checkout-order-review-discount-down">
+                                                <td class="container__checkout-order-review-discount-down-text">
+                                                    Discount
+                                                </td>
+                                                <td class="container__checkout-order-review-item-price">
+                                                    20.000<span>&#8363;</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tfoot class="container__checkout-order-review-total-line-table-footer">
+                                            <tr class="container__checkout-order-review-total">
+                                                <td class="container__checkout-order-review-total-text">
+                                                    Total
+                                                </td>
+                                                <td
+                                                    class="container__checkout-order-review-item-price container__checkout-order-review-total-price">
+                                                    700.000<span>&#8363;</span>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- start footer -->
+        <footer class="footer">
+            <div class="footer__banner">
+                <span class="footer__banner-text">THE STORE SERVICES</span>
+                <div class="footer__banner-items-wrap">
+                    <div class="footer__banner-item">
+                        <i class="ti-truck footer__banner-item-icon"></i>
+                        <span class="footer__banner-item-title">FREE DELIVERY</span>
+                        <span class="footer__banner-item-text">Free standard delivery for Orders 1.000.000 vnd +</span>
+                    </div>
+
+                    <div class="footer__banner-item">
+                        <i class="ti-gift footer__banner-item-icon"></i>
+                        <span class="footer__banner-item-title">GIFTS AND PROMOTIONS</span>
+                        <span class="footer__banner-item-text">
+                            Your order will be presented gift packaging, applied ​promotion and ​accompanied by a
+                            personalised message
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <div class="grid wide footer__content-block-item">
+                    <div class="row no-gutters">
+                        <div class="footer__content-item col l-4 m-4 c-12">
+                            <span class="footer__content-item-title">ABOUT RENÉ</span>
+                            <a href="#" class="footer__content-item-link">Our story</a>
+                            <a href="#" class="footer__content-item-link">Store location</a>
+                            <a href="#" class="footer__content-item-link">Our products</a>
+                            <a href="#" class="footer__content-item-link">New collection</a>
+                        </div>
+
+                        <div class="footer__content-item col l-4 m-4 c-12">
+                            <span class="footer__content-item-title">CUSTOMER SERVICE</span>
+                            <a href="#" class="footer__content-item-link">Delivery & Payments</a>
+                            <a href="#" class="footer__content-item-link">Guarantee & Returns</a>
+                            <a href="#" class="footer__content-item-link">FAQ</a>
+                            <a href="#" class="footer__content-item-link">Data Protection</a>
+                        </div>
+
+                        <div class="footer__content-item footer__content-item-icon col l-4 m-4 c-12">
+                            <span class="footer__content-item-title">CONTACT & SOCIAL MEDIA</span>
+                            <div class="footer__content-item-icon-wrap">
+                                <a href="#" class="footer__content-item-link footer__content-item-link-icon">
+                                    <i class="ti-email"></i>
+                                </a>
+                                <a href="#" class="footer__content-item-link footer__content-item-link-icon">
+                                    <i class="ti-instagram"></i>
+                                </a>
+                                <a href="#" class="footer__content-item-link footer__content-item-link-icon">
+                                    <i class="ti-twitter-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <div class="row l-12 m-12 c-12 no-gutters">
+                        <span class="footer__text">&copy; 2021 RENÉ. All Rights Reserved. </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- insert javascript -->
+
+    <script src="../assets/javascript/checkout.js" defer></script>
+
+</body>
+
+</html>

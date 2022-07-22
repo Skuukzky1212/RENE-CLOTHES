@@ -1,0 +1,43 @@
+/* ipad pro : > tablet < PC */
+@media (min-width: 1024px) and (max-width: 1365px) {
+
+}
+
+
+/* mobile & tablet */
+@media (max-width: 1023px) {
+
+    
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .main-product-item__action {
+        font-size: 2.2rem;
+    }
+
+    .filter__modal {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .filter__modal-container-items-title-wrap {
+        text-align: right;
+    }
+
+    .filter__modal-container-items-title-icon {
+        display: none;
+    }
+
+    .filter__modal-container-btn {
+        width: 90%;
+        margin-top: 50px;
+        overflow: hidden;
+    }
+}

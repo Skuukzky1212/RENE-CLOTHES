@@ -1,0 +1,53 @@
+{
+    "products": [
+      { 
+        "id" : 1,
+        "name" : "BELLISSA (light blue)",
+        "price": 720000,
+        "image": "https://cdn.shopify.com/s/files/1/0627/8957/products/FW3840LB_Bellissa_1_1024x1024.jpg?v=1631662296"
+      },
+      { 
+        "id" : 2,
+        "name" : "APRIL (Wine)",
+        "price": 800000,
+        "image": "https://cdn.shopify.com/s/files/1/0627/8957/products/FW3833WN_APRIL_1_grande.jpg?v=1630443950"
+      },
+      { 
+        "id" : 3,
+        "name" : "BECCA (Dark Purple)",
+        "price": 530000,
+        "image": "https://cdn.shopify.com/s/files/1/0627/8957/products/FW3838DP_Becca_1_grande.jpg?v=1630445609"
+      },
+      { 
+        "id" : 4,
+        "name" : "KAKADU",
+        "price": 600000,
+        "image": "https://cdn.shopify.com/s/files/1/0627/8957/products/210203be_1415_grande.jpg?v=1616548207"
+      },
+      { 
+        "id" : 5,
+        "name" : "SERENGETI",
+        "price": 860000,
+        "image": "https://cdn.shopify.com/s/files/1/0627/8957/products/210203be_1088_grande.jpg?v=1616548464"
+      },
+      { 
+        "id" : 6,
+        "name" : "APPLE",
+        "price": 800000,
+        "image": "https://cdn.shopify.com/s/files/1/0627/8957/products/01.SS3801RW_Apple__1_grande.jpg?v=1614846177"
+      },
+      { 
+        "id" : 7,
+        "name" : "CELINE (Light Blue)",
+        "price": 1499000,
+        "image": "https://cdn.shopify.com/s/files/1/0627/8957/products/FW3843LB_Celine_1_grande.jpg?v=1630445948"
+      },
+      { 
+        "id" : 8,
+        "name" : "ELLEN (Grey)",
+        "price": 999000,
+        "image": "https://cdn.shopify.com/s/files/1/0627/8957/products/FW3845GR_Ellen_2_grande.jpg?v=1630557804"
+      }
+    ]
+    
+  }

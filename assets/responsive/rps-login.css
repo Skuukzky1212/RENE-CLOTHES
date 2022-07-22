@@ -1,0 +1,50 @@
+/* ipad pro : > tablet < PC */
+@media (min-width: 1024px) and (max-width: 1365px) {
+    .login__modal-container-btn {
+        width: 50%;
+    }
+}
+
+
+/* mobile & tablet */
+@media (max-width: 1023px) {
+    .container__log-in-create-account-input, .container__log-in-account-input {
+        width: 100%;
+        outline: none;
+    }
+
+    .container__log-in-account {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .login__modal-container-btn {
+        width: 50%;
+    }
+    
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+
+}
+
+/* mobile */
+@media (max-width: 739px) {
+
+    .container__log-in-page {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .login__modal-container-btn {
+        width: 100%;
+        opacity: 1;
+    }
+
+    .login__modal-container-btn:hover {
+        opacity: 1;
+    }
+
+}

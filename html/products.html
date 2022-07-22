@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rene Website - Products</title>
+    <link rel="shortcut icon" type="image/png" href="../assets/img/mini-logo.png">
+    <link rel="stylesheet" href="../assets/fonts/Century Gothic Std Regular.otf">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/responsive/rps-base.css">
+    <link rel="stylesheet" href="../assets/responsive/rps-products.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- start header -->
+        <header class="header">
+            <!-- header lead-navbar -->
+            <nav class="header__leadnav">
+                <div class="grid wide">
+                    <nav class="header__leadnav-wrap">
+                        <div class="header__leadnav-location">
+                            <i class="ti-location-pin header__leadnav-location-icon "></i>
+                            <p class="header__leadnav-location-text">Vietnam</p>
+                        </div>
+
+                        <div class="header__leadnav-language">
+                            <a href="#" class="header__leadnav-language-link">English</a>
+                        </div>
+
+                        <div class="header__leadnav-phone">
+                            <i class="ti-mobile header__leadnav-phone-icon"></i>
+                            <p class="header__leadnav-phone-num">+0369830702</p>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+
+            <!-- header navbar -->
+            <nav class="header__navbar">
+                <div class="grid wide">
+                    <div class="header__navbar-wrap">
+                        <!-- category for mobile in small screen -->
+                        <input type="checkbox" name="" id="hamburger-menu-check">
+                        <div class="header__navbar-hamburger-menu-container">
+                            <div class="header__navbar-hamburger-menu">
+                                <div></div>
+                            </div>
+                        </div>
+                        <!-- end mobile category -->
+
+                        <div class="header__navbar-search-wrap">
+                            <input type="text" maxlength="30" required spellcheck="false"
+                                placeholder="What are you looking for ?" class="header__navbar-search">
+
+                            <button class="header__navbar-search-btn">
+                                <i class="ti-search header__navbar-search-icon"></i>
+                            </button>
+                        </div>
+
+                        <a href="../html/home.html" class="header__navbar-logo-link">
+                            <div class="header__navbar-logo"></div>
+                        </a>
+
+                        <div class="header__navbar-option">
+                            <div class="header__navbar-option-icon-wrap header__navbar-option-wishlist">
+                                <i class="ti-heart header__navbar-option-icon-liked"></i>
+                                <p class="header__navbar-option-icon-num-liked">2</p>
+                            </div>
+
+                            <div class="header__navbar-option-icon-wrap header__navbar-option-basket">
+                                <i class="ti-bag header__navbar-option-icon-bought"></i>
+                                <p class="header__navbar-option-icon-num-bought">2</p>
+                            </div>
+
+                            <i class="ti-user header__navbar-option-user-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- category -->
+            <div class="header__category header__category-mobile autohide">
+                <div class="grid wide">
+                    <!-- start category with search in mobile -->
+                    <div class="header__navbar-search-wrap header__category-mobile-search">
+                        <input type="text" maxlength="30" required spellcheck="false"
+                            placeholder="What are you looking for ?" class="header__navbar-search">
+
+                        <button class="header__navbar-search-btn">
+                            <i class="ti-search header__navbar-search-icon"></i>
+                        </button>
+                    </div>
+                    <!-- end category with search in mobile -->
+
+                    <ul class="header__category-list  header__category-list-mobile-lv0">
+                        <!-- add class .header__category-list-item--active to li tag -->
+                        <a href="#" class="header__category-list-item-link">
+                            <li class="header__category-list-item">HOME</li>
+                        </a>
+
+                        <div class="header__category-list-item-link js-open-category-list js-open-cate-lv0-list">
+                            <li class="header__category-list-item">DENIM
+                                <i class="header__category-list-item-mobile-icon ti-angle-right"></i>
+                            </li>
+                        </div>
+
+                        <div class="header__category-list-item-link js-open-category-list js-open-cate-lv0-list">
+                            <li class="header__category-list-item js-category-item-active">READY TO WEAR
+                                <i class="header__category-list-item-mobile-icon ti-angle-right"></i>
+                            </li>
+                        </div>
+
+                        <div class="header__category-list-item-link js-open-category-list js-open-cate-lv0-list">
+                            <li class="header__category-list-item">COSMETICS
+                                <i class="header__category-list-item-mobile-icon ti-angle-right"></i>
+                            </li>
+                        </div>
+
+                        <a href="#" class="header__category-list-item-link">
+                            <li class="header__category-list-item">EYEWEAR</li>
+                        </a>
+
+                        <a href="#" class="header__category-list-item-link">
+                            <li class="header__category-list-item">ACCESSORIES</li>
+                        </a>
+                    </ul>
+
+                    <ul
+                        class="header__category-list header__category-list-first-cate-wrap header__category-list-mobile-lv1">
+                        <div class="header__category-list-mobile-lv1-title">
+                            <i class="ti-angle-left header__category-list-mobile-lv1-title-icon"></i>
+                            <span class="header__category-list-mobile-lv2-title-text">
+                                READY TO WEAR
+                            </span>
+                        </div>
+
+                        <li class="header__category-list-first-cate-item js-open-cate-lv1-list">
+                            <span class="header__category-list-first-cate-item-text">Ready-to-Wear for women</span>
+                            <i class="header__category-list-item-mobile-icon ti-angle-right"></i>
+                        </li>
+                        <li class="header__category-list-first-cate-item js-open-cate-lv1-list">
+                            <span class="header__category-list-first-cate-item-text">Ready-to-Wear for men</span>
+                            <i class="header__category-list-item-mobile-icon ti-angle-right"></i>
+                        </li>
+                        <li class="header__category-list-first-cate-item">
+                            <a href="#" class="header__category-list-first-cate-item-text">New Collection</a>
+                            <i class="header__category-list-item-mobile-icon ti-angle-right"></i>
+                        </li>
+                        <li class="header__category-list-first-cate-item">
+                            <a href="#" class="header__category-list-first-cate-item-text">All Products</a>
+                            <i class="header__category-list-item-mobile-icon ti-angle-right"></i>
+                        </li>
+                    </ul>
+
+
+                    <ul
+                        class="header__category-list header__category-list-second-cate-wrap header__category-list-mobile-lv2">
+                        <div class="header__category-list-mobile-lv2-title">
+                            <i class="ti-angle-left header__category-list-mobile-lv2-title-icon"></i>
+                            <span class="header__category-list-mobile-lv2-title-text">
+                                Ready-to-Wear for women
+                            </span>
+                        </div>
+
+                        <a href="#" class="header__category-list-second-cate-link">
+                            <li class="header__category-list-second-cate-item">Jackets</li>
+                        </a>
+
+                        <a href="#" class="header__category-list-second-cate-link">
+                            <li class="header__category-list-second-cate-item">Coats</li>
+                        </a>
+
+                        <a href="#" class="header__category-list-second-cate-link">
+                            <li class="header__category-list-second-cate-item">Dresses</li>
+                        </a>
+
+                        <a href="#" class="header__category-list-second-cate-link">
+                            <li class="header__category-list-second-cate-item">Skirts</li>
+                        </a>
+
+                        <a href="#" class="header__category-list-second-cate-link">
+                            <li class="header__category-list-second-cate-item">Tops</li>
+                        </a>
+
+                        <a href="#" class="header__category-list-second-cate-link">
+                            <li class="header__category-list-second-cate-item">Pants & Shorts</li>
+                        </a>
+
+                        <a href="#" class="header__category-list-second-cate-link">
+                            <li class="header__category-list-second-cate-item">T-shirts</li>
+                        </a>
+
+                        <a href="#" class="header__category-list-second-cate-link">
+                            <li class="header__category-list-second-cate-item">Denim</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- start container -->
+        <div class="container container__pd-top">
+            <div class="grid wide">
+                <div class="container__breadcrumb">
+                    <div class="container__breadcrumb-wrap">
+                        <a href="#" class="container__breadcrumb-homepage-link" title="Back to the home page">Home</a>
+                        <i class="container__breadcrumb-icon ti-angle-right"></i>
+                        <span style="cursor: default;" class="container__breadcrumb-page-title">New collection</span>
+                    </div>
+
+                    <div class="container__filter">
+                        <i class="container__filter-icon ti-filter"></i>
+                        FILTER
+                    </div>
+                </div>
+            </div>
+            <div class="container__product">
+                <div class="grid wide">
+                    <div class="container__product-wrap row sm-gutter">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <ul class="container__product-pagination">
+                <!-- add class "container__product-pagination-item--disable" into li tag for disable btn, write JS function prevent load page -->
+                <li class="container__product-pagination-item container__product-pagination-item--disable">
+                    <a href="#" class="container__product-pagination-item__link">
+                        <i
+                            class="container__product-pagination-item__icon ti-angle-double-left container__product-pagination-item--disable"></i>
+                    </a>
+                </li>
+                <li class="container__product-pagination-dots">...</li>
+                <li class="container__product-pagination-item">
+                    <a href="#" class="container__product-pagination-item__link">
+                        <i class="container__product-pagination-item__icon ti-angle-double-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- start footer -->
+        <footer class="footer">
+            <div class="footer__banner">
+                <span class="footer__banner-text">THE STORE SERVICES</span>
+                <div class="footer__banner-items-wrap">
+                    <div class="footer__banner-item">
+                        <i class="ti-truck footer__banner-item-icon"></i>
+                        <span class="footer__banner-item-title">FREE DELIVERY</span>
+                        <span class="footer__banner-item-text">Free standard delivery for Orders 1.000.000 vnd +</span>
+                    </div>
+
+                    <div class="footer__banner-item">
+                        <i class="ti-gift footer__banner-item-icon"></i>
+                        <span class="footer__banner-item-title">GIFTS AND PROMOTIONS</span>
+                        <span class="footer__banner-item-text">
+                            Your order will be presented gift packaging, applied ​promotion and ​accompanied by a
+                            personalised message
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <div class="grid wide footer__content-block-item">
+                    <div class="row no-gutters">
+                        <div class="footer__content-item col l-4 m-4 c-12">
+                            <span class="footer__content-item-title">ABOUT RENÉ</span>
+                            <a href="#" class="footer__content-item-link">Our story</a>
+                            <a href="#" class="footer__content-item-link">Store location</a>
+                            <a href="#" class="footer__content-item-link">Our products</a>
+                            <a href="#" class="footer__content-item-link">New collection</a>
+                        </div>
+
+                        <div class="footer__content-item col l-4 m-4 c-12">
+                            <span class="footer__content-item-title">CUSTOMER SERVICE</span>
+                            <a href="#" class="footer__content-item-link">Delivery & Payments</a>
+                            <a href="#" class="footer__content-item-link">Guarantee & Returns</a>
+                            <a href="#" class="footer__content-item-link">FAQ</a>
+                            <a href="#" class="footer__content-item-link">Data Protection</a>
+                        </div>
+
+                        <div class="footer__content-item footer__content-item-icon col l-4 m-4 c-12">
+                            <span class="footer__content-item-title">CONTACT & SOCIAL MEDIA</span>
+                            <div class="footer__content-item-icon-wrap">
+                                <a href="#" class="footer__content-item-link footer__content-item-link-icon">
+                                    <i class="ti-email"></i>
+                                </a>
+                                <a href="#" class="footer__content-item-link footer__content-item-link-icon">
+                                    <i class="ti-instagram"></i>
+                                </a>
+                                <a href="#" class="footer__content-item-link footer__content-item-link-icon">
+                                    <i class="ti-twitter-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <div class="row l-12 m-12 c-12 no-gutters">
+                        <span class="footer__text">&copy; 2021 RENÉ. All Rights Reserved. </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- category list modal -->
+    <div class="category__modal-overlay">
+        <div class="header__category-list-modal">
+            <div class="header__category-list-first-cate">
+                <!-- add class 'active' to activate the category item -->
+                <ul class="header__category-list-first-cate-wrap">
+                    <li class="header__category-list-first-cate-item ">
+                        <span
+                            class="header__category-list-first-cate-item-text js-category-cateLv1-active">Ready-to-Wear
+                            for women</span>
+                    </li>
+                    <li class="header__category-list-first-cate-item">
+                        <span
+                            class="header__category-list-first-cate-item-text js-category-cateLv1-active">Ready-to-Wear
+                            for men</span>
+                    </li>
+                    <li class="header__category-list-first-cate-item">
+                        <a href="#" class="header__category-list-first-cate-item-text">New Collection</a>
+                    </li>
+                    <li class="header__category-list-first-cate-item">
+                        <a href="#" class="header__category-list-first-cate-item-text">All Products</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__category-list-second-cate">
+                <ul class="header__category-list-second-cate-wrap">
+                    <a href="#" class="header__category-list-second-cate-link">
+                        <li class="header__category-list-second-cate-item">Jackets</li>
+                    </a>
+
+                    <a href="#" class="header__category-list-second-cate-link">
+                        <li class="header__category-list-second-cate-item">Coats</li>
+                    </a>
+
+                    <a href="#" class="header__category-list-second-cate-link">
+                        <li class="header__category-list-second-cate-item">Dresses</li>
+                    </a>
+
+                    <a href="#" class="header__category-list-second-cate-link">
+                        <li class="header__category-list-second-cate-item">Skirts</li>
+                    </a>
+
+                    <a href="#" class="header__category-list-second-cate-link">
+                        <li class="header__category-list-second-cate-item">Tops</li>
+                    </a>
+
+                    <a href="#" class="header__category-list-second-cate-link">
+                        <li class="header__category-list-second-cate-item">Pants & Shorts</li>
+                    </a>
+
+                    <a href="#" class="header__category-list-second-cate-link">
+                        <li class="header__category-list-second-cate-item">T-shirts</li>
+                    </a>
+
+                    <a href="#" class="header__category-list-second-cate-link">
+                        <li class="header__category-list-second-cate-item">Denim</li>
+                    </a>
+                </ul>
+
+                <a href="#" class="header__category-list-second-cate-img-link">
+                    <div class="header__category-list-second-cate-img">
+                    </div>
+                </a>
+
+                <i class="ti-close header__category-list-close-btn js-modal-close-btn"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- login modal -->
+    <div class="login__modal-overlay">
+        <div class="login__modal">
+            <div class="login__modal-close-btn ">
+                <i class="ti-close side-modal__close-btn"></i>
+            </div>
+
+            <div class="login__modal-header">
+                <div class="login__modal-header-text">ACCOUNT</div>
+            </div>
+
+            <div class="login__modal-container login__modal-sidebar-container">
+                <form class="login__modal-container-form">
+                    <h4 class="login__modal-container-title container__log-in-account-title">LOG IN</h4>
+                    <span class="login__modal-container-title-text container__log-in-account-title-text">
+                        To access your account
+                    </span>
+                    <div class="container__log-in-form-control">
+                        <input type="email" class="login__modal-container-input container__log-in-create-account-input"
+                            placeholder="*Enter your email address" name="email-login" />
+                    </div>
+
+                    <div class="container__log-in-form-control">
+                        <input type="password"
+                            class="login__modal-container-input container__log-in-create-account-input"
+                            placeholder="*Enter your password" name="pwd-signup" />
+                    </div>
+
+                    <span
+                        class="container__log-in-forget-pwd login__modal-container-text container__log-in-account-text">
+                        I forgot my password
+                    </span>
+
+                    <button class="login__modal-container-btn container__log-in-account-btn">SIGN IN</button>
+                </form>
+
+                <form class="login__modal-container-sign-in login__modal-container-forgot-password">
+                    <h2 class="login__modal-container-title forgot-password__modal-container-title">
+                        FORGOT PASSWORD?
+                    </h2>
+                    <span class="checkout__note-text login__modal-sidebar-note-text">Enter your email, and we will send
+                        details on how to reset your password.</span>
+                    <div class="container__checkout-info-wrap">
+                        <label class="container__checkout-info-label forgot-password__modal-container-label">Registered
+                            email</label>
+                        <input required type="email"
+                            class="container__checkout-info-input forgot-password__modal-container-input forgot-password__modal-sidebar-container-input"
+                            placeholder="*Enter your registered email">
+                    </div>
+
+                    <a href="#" class="container__log-in-forget-pwd-back-to-login login__modal-container-text">Sign-in
+                        with a different email address</a>
+                    <button type="submit" class="login__modal-container-btn">SUBMIT</button>
+                </form>
+            </div>
+            <div class="login__modal-footer">
+                <div class="login__modal-footer-text">ALREADY HAVE AN ACCOUNT?</div>
+
+                <button class="login__modal-footer-btn"><a href="../html/login.html">CREATE AN ACCOUNT</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- wishlist modal -->
+    <div class="wishlist__modal-overlay">
+        <div class="wishlist__modal">
+            <div class="wishlist__modal-close-btn">
+                <i class="ti-close side-modal__close-btn"></i>
+            </div>
+
+            <div class="wishlist__modal-header">
+                <div class="wishlist__modal-header-text">
+                    MY WISHLIST
+                    (<span class="login__modal-header-wishlist-quantity">2</span>)
+                </div>
+            </div>
+
+            <div class="wishlist__modal-container">
+                <!-- Empty wishlist: add class 'wishlist__modal-container-empty' into wishlist__modal-container -->
+                <span class="wishlist__modal-container-empty-text">
+                    Your Wishlist is empty
+                </span>
+
+                <!-- wishlist has product -->
+                <!-- when user choose size, add class "wishlist__modal-product-size-item-active" and "wishlist__modal-product-icon-active" -->
+                <div class="wishlist__modal-product-item-wrap">
+                    <div class="wishlist__modal-product-item">
+                        <a href="#" class="wishlist__modal-product-img"
+                            style="background-image: 
+                                url(https://cdn.shopify.com/s/files/1/0627/8957/products/FW3840LB_Bellissa_1_1024x1024.jpg?v=1631662296)">
+                        </a>
+                        <div class="wishlist__modal-product-content">
+                            <a href="#" class="wishlist__modal-product-name">BELLISSA</a>
+                            <div class="wishlist__modal-product-description">
+                                <span class="wishlist__modal-product-description-color">Light blue</span>
+                                <span class="wishlist__modal-product-description-material">Acrylic, nylon</span>
+                            </div>
+                            <span class="wishlist__modal-product-price">720.000&#8363;</span>
+                            <button class="wishlist__modal-product-remove-item-btn">Remove</button>
+                        </div>
+                        <a href="#" class="wishlist__modal-product-icon wishlist__modal-product-icon-active">
+                            <i class="ti-bag"></i>
+                        </a>
+                    </div>
+
+                    <div class="wishlist__modal-product-choose-size">
+                        <span class="wishlist__modal-product-size-item">XS</span>
+                        <span class="wishlist__modal-product-size-item">S</span>
+                        <span
+                            class="wishlist__modal-product-size-item wishlist__modal-product-size-item-active">M</span>
+                        <span class="wishlist__modal-product-size-item">L</span>
+                        <span class="wishlist__modal-product-size-item">XL</span>
+                    </div>
+                </div>
+
+                <div class="wishlist__modal-product-item-wrap">
+                    <div class="wishlist__modal-product-item">
+                        <a href="#" class="wishlist__modal-product-img"
+                            style="background-image: 
+                               url(https://cdn.shopify.com/s/files/1/0627/8957/products/FW3843LB_Celine_1_grande.jpg?v=1630445948)">
+                        </a>
+                        <div class="wishlist__modal-product-content">
+                            <a href="#" class="wishlist__modal-product-name">CELINE</a>
+                            <div class="wishlist__modal-product-description">
+                                <span class="wishlist__modal-product-description-color">Light blue</span>
+                                <span class="wishlist__modal-product-description-material">Acrylic, nylon</span>
+                            </div>
+                            <span class="wishlist__modal-product-price">1.490.000&#8363;</span>
+                            <button class="wishlist__modal-product-remove-item-btn">Remove</button>
+                        </div>
+                        <div class="wishlist__modal-product-icon">
+                            <i class="ti-bag"></i>
+                        </div>
+                    </div>
+
+                    <div class="wishlist__modal-product-choose-size">
+                        <span class="wishlist__modal-product-size-item">XS</span>
+                        <span class="wishlist__modal-product-size-item">S</span>
+                        <span class="wishlist__modal-product-size-item">M</span>
+                        <span class="wishlist__modal-product-size-item">L</span>
+                        <span class="wishlist__modal-product-size-item">XL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Basket modal -->
+    <div class="basket__modal-overlay">
+        <div class="basket__modal">
+            <div class="basket__modal-close-btn">
+                <i class="ti-close side-modal__close-btn"></i>
+            </div>
+
+            <div class="basket__modal-header">
+                <div class="basket__modal-header-text">
+                    MY BASKET
+                    (<span class="basket__modal-header-basket-quantity">2</span>)
+                </div>
+            </div>
+
+            <div class="basket__modal-product">
+                <!-- basket has no product, add class 'basket__modal-product-no-product' -->
+                <div class="basket__modal-product-no-product-items">
+                    <span class="basket__modal-product-no-product-msg">You do not have any products in your
+                        basket</span>
+                    <div class="basket__modal-product-no-product-btn"><a href="#">CONTINUE SHOPPING</a></div>
+                </div>
+                <!-- basket has product -->
+                <div class="basket__modal-container">
+                    <div class="basket__modal-product-item">
+                        <a href="#" class="basket__modal-product-img"
+                            style="background-image: 
+                                url(https://cdn.shopify.com/s/files/1/0627/8957/products/FW3840LB_Bellissa_1_1024x1024.jpg?v=1631662296)">
+                        </a>
+
+                        <div class="basket__modal-product-content">
+                            <a href="#" class="basket__modal-product-name">BELLISSA</a>
+
+                            <div class="basket__modal-product-description">
+                                <span class="basket__modal-product-description-color">Light blue</span>
+                                <span class="basket__modal-product-description-material">Acrylic, nylon</span>
+                                <span class="basket__modal-product-description-size">Size M</span>
+                            </div>
+
+                            <span class="basket__modal-product-price">720.000&#8363;</span>
+
+                            <button class="basket__modal-product-remove-item-btn">Remove</button>
+                        </div>
+
+                        <div class="basket__modal-product-qty-wrap">
+                            <form class="quantity-input-form">
+                                <div class="quantity-input-button quantity-input-button-decrease"
+                                    onclick="decreaseValue()" value="Decrease Value"> -
+                                </div>
+
+                                <input class="quantity-input-value" type="number" value="0" />
+
+                                <div class="quantity-input-button quantity-input-button-increase"
+                                    onclick="increaseValue()"> +
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="basket__modal-product-item">
+                        <a href="#" class="basket__modal-product-img"
+                            style="background-image: 
+                                url(https://cdn.shopify.com/s/files/1/0627/8957/products/FW3864IV_Lucia_1_grande.jpg?v=1631664252)">
+                        </a>
+
+                        <div class="basket__modal-product-content">
+                            <a href="#" class="basket__modal-product-name">LUCIA</a>
+
+                            <div class="basket__modal-product-description">
+                                <span class="basket__modal-product-description-color">Ivory</span>
+                                <span class="basket__modal-product-description-material">Nylon 100%</span>
+                                <span class="basket__modal-product-description-size">Size XS</span>
+                            </div>
+
+                            <span class="basket__modal-product-price">820.000&#8363;</span>
+
+                            <button class="basket__modal-product-remove-item-btn">Remove</button>
+                        </div>
+
+                        <div class="basket__modal-product-qty-wrap">
+                            <form class="quantity-input-form">
+                                <div class="quantity-input-button quantity-input-button-decrease"
+                                    onclick="decreaseValue()" value="Decrease Value"> -
+                                </div>
+
+                                <input class="quantity-input-value" type="number" value="0" />
+
+                                <div class="quantity-input-button quantity-input-button-increase"
+                                    onclick="increaseValue()"> +
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="basket__modal-product-item">
+                        <a href="#" class="basket__modal-product-img"
+                            style="background-image: 
+                                url(https://cdn.shopify.com/s/files/1/0627/8957/products/03.SS3803PK_Peach__1_1024x1024.jpg?v=1614846460)">
+                        </a>
+
+                        <div class="basket__modal-product-content">
+                            <a href="#" class="basket__modal-product-name">PEACH</a>
+
+                            <div class="basket__modal-product-description">
+                                <span class="basket__modal-product-description-color">Pink check/ waist incision
+                                    line</span>
+                                <span class="basket__modal-product-description-material">Cotton, Terylene</span>
+                                <span class="basket__modal-product-description-size">Size L </span>
+                            </div>
+
+                            <span class="basket__modal-product-price">900.000&#8363;</span>
+
+                            <button class="basket__modal-product-remove-item-btn">Remove</button>
+                        </div>
+
+                        <div class="basket__modal-product-qty-wrap">
+                            <form class="quantity-input-form">
+                                <div class="quantity-input-button quantity-input-button-decrease"
+                                    onclick="decreaseValue()" value="Decrease Value"> -
+                                </div>
+
+                                <input class="quantity-input-value" type="number" value="0" />
+
+                                <div class="quantity-input-button quantity-input-button-increase"
+                                    onclick="increaseValue()"> +
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="basket__modal-product-total">
+                    <span class="basket__modal-product-total-text">Total: <span
+                            class="basket__modal-product-total-price">3.260.000 &#8363;</span></span>
+                    <a href="#" class="basket__modal-product-total-coupon">Have a Coupon?</a>
+                </div>
+
+                <div class="basket__modal-product-checkout">
+                    <a href="#" class="basket__modal-product-checkout-link">View Cart</a>
+                    <a href="#" class="basket__modal-product-checkout-link">Check Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter modal -->
+    <div class="filter__modal-overlay">
+        <div class="filter__modal">
+            <div class="filter__modal-close-btn">
+                <!-- add class "filter__modal-reset-btn--active" to activate the reset filter feature -->
+                <span class="filter__modal-reset-btn">RESET FILTERS</span>
+                <i class="ti-close side-modal__close-btn"></i>
+            </div>
+            <div class="filter__modal-container">
+                <div class="filter__modal-container-items">
+                    <div class="filter__modal-container-items-title-wrap">
+                        <span class="filter__modal-container-items-title">SIZES</span>
+                        <i class="ti-angle-down filter__modal-container-items-title-icon"></i>
+                    </div>
+                    <div class="filter__modal-container-item-size-wrap">
+                        <button class="filter__modal-container-item-size">XS</button>
+                        <button class="filter__modal-container-item-size">S</button>
+                        <button class="filter__modal-container-item-size">M</button>
+                        <button class="filter__modal-container-item-size">L</button>
+                        <button class="filter__modal-container-item-size">XL</button>
+                    </div>
+
+                    <div class="filter__modal-container-sort-wrap">
+                        <!-- add class "filter__modal-container-item-sort-content--active" into li tag 
+                            to activate the content of sort items -->
+                        <div class="filter__modal-container-sort-color">
+                            <div class="filter__modal-container-items-title-wrap">
+                                <span class="filter__modal-container-items-title">Color</span>
+                                <i class="ti-angle-down filter__modal-container-items-title-icon"></i>
+                            </div>
+                            <ul class="filter__modal-container-list-color">
+                                <li class="filter__modal-container-item-color">Black</li>
+                                <li class="filter__modal-container-item-color">Light Blue</li>
+                                <li class="filter__modal-container-item-color">White</li>
+                                <li class="filter__modal-container-item-color">Wine</li>
+                                <li class="filter__modal-container-item-color">IVORY</li>
+                                <li class="filter__modal-container-item-color">Pink</li>
+                                <li class="filter__modal-container-item-color">Grey</li>
+                            </ul>
+                        </div>
+
+                        <div class="filter__modal-container-sort-material">
+                            <div class="filter__modal-container-items-title-wrap">
+                                <span class="filter__modal-container-items-title">Material</span>
+                                <i class="ti-angle-down filter__modal-container-items-title-icon"></i>
+                            </div>
+                            <ul class="filter__modal-container-list-material">
+                                <li class="filter__modal-container-item-material">Nylon</li>
+                                <li class="filter__modal-container-item-material">Acrylic</li>
+                                <li class="filter__modal-container-item-material">Polyester</li>
+                                <li class="filter__modal-container-item-material">Wool</li>
+                                <li class="filter__modal-container-item-material">Viscose</li>
+                                <li class="filter__modal-container-item-material">Cotton</li>
+                                <li class="filter__modal-container-item-material">Polyurethane</li>
+                            </ul>
+                        </div>
+
+                        <div class="filter__modal-container-sort-options">
+                            <div class="filter__modal-container-items-title-wrap">
+                                <span class="filter__modal-container-items-title">Sort by</span>
+                                <i class="ti-angle-down filter__modal-container-items-title-icon"></i>
+                            </div>
+                            <ul class="filter__modal-container-list-sort">
+                                <li class="filter__modal-container-item-sort">New Product</li>
+                                <li class="filter__modal-container-item-sort">Price low to high</li>
+                                <li class="filter__modal-container-item-sort">Price high to low</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="filter__modal-container-btn">
+                    Apply Filters
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- insert javascript -->
+    <script src="../assets/javascript/main.js" defer></script>
+    <script src="../assets/javascript/product.js" defer></script>
+
+</body>
+
+</html>
